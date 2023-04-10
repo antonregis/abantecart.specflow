@@ -10,7 +10,7 @@ namespace TestSuite.Pages
 
         #region  Initialize Web Elements
 
-        private static IWebElement LoginOrRegisterLink => driver.FindElement(By.XPath("//a[normalize-space()='Login or register']"));
+        private static IWebElement TopCustomerMenu => driver.FindElement(By.CssSelector("ul[id='customer_menu_top'] li a"));
         private static IWebElement Placeholder => driver.FindElement(By.XPath(""));
 
         #endregion
@@ -18,13 +18,18 @@ namespace TestSuite.Pages
 
         internal void ClickLoginOrRegisterLink()
         {
-            LoginOrRegisterLink.Click();
+            TopCustomerMenu.Click();
         }
 
 
         internal string GetPlaceholder()
         {
             return Placeholder.Text;
+        }
+
+        public string GetTopCustomerMenu()
+        {
+            return TopCustomerMenu.Text;
         }
     }
 }

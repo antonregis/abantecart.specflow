@@ -1,7 +1,7 @@
 ﻿using AventStack.ExtentReports;
 using OpenQA.Selenium;
 using System.Text;
-
+using System.Drawing.Imaging;
 
 namespace TestSuite.Utilities
 {
@@ -30,17 +30,17 @@ namespace TestSuite.Utilities
             }
         }
 
-        public static MediaEntityModelProvider CaptureScreenShot()
+        public static string GetBase64Screenshot()
         {
-            ITakesScreenshot ts = (ITakesScreenshot)driver;
-            var screenShot = ts.GetScreenshot().AsBase64EncodedString;
+            var screenShot = ((ITakesScreenshot)driver).GetScreenshot();
 
-            DateTime time = DateTime.Now;
-            String fileName = "Screenshot_" + time.ToString("h_mm_ss") + ".png";
+            // Convert the screenshot to a byte array
+            byte[] screenshotBytes = screenShot.AsByteArray;
 
-            return MediaEntityBuilder.CreateScreenCaptureFromBase64String(screenShot, fileName).Build();
+            // Convert the byte array to a base64 string
+            string base64String = Convert.ToBase64String(screenshotBytes);
+
+            return base64String;
         }
-
-
     }
 }

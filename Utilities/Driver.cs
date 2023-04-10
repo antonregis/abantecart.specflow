@@ -52,7 +52,6 @@ namespace TestSuite.Utilities
             driver.Manage().Window.Maximize();
         }
 
-
         public static void NavigateToBaseUrl()
         {
             driver.Navigate().GoToUrl(EnvironmentHelper.BaseUrl);

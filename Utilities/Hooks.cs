@@ -6,6 +6,9 @@ using TechTalk.SpecFlow;
 using static TestSuite.Utilities.ScreenShotHelper;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
+using OpenQA.Selenium;
+using System.Text;
+
 
 namespace TestSuite.Utilities
 {
@@ -42,7 +45,7 @@ namespace TestSuite.Utilities
         {
             // Launch the browser
             InitializeBrowser(EnvironmentHelper.BrowserType);
-
+            
             // ExtentReport: Create node or the Scenario
             scenario = featureName.CreateNode<Scenario>(scenarioContext.ScenarioInfo.Title);
         }
@@ -83,16 +86,16 @@ namespace TestSuite.Utilities
             var status = TestContext.CurrentContext.Result.Outcome.Status;
             var stackTrace = TestContext.CurrentContext.Result.StackTrace;
 
-
             if (status == TestStatus.Failed)
             {
-                // Take a screenshot          
-                scenario.Fail("Failed", ScreenShotHelper.CaptureScreenShot());
-                // scenario.Log(Status.Fail, "Stack Trace: " + stackTrace);
+                // Take a screenshot and attach a base64-img.      
+                // This is preferred as the screenshot is integrated in the html report as a text. 
+                // No need to attach separate screenshot files.
+                scenario.AddScreenCaptureFromBase64String(ScreenShotHelper.GetBase64Screenshot());
 
-                string img = SaveScreenShotClass.SaveScreenshot("Screenshot");
-                scenario.AddScreenCaptureFromPath(img);
-                // scenario.AddScreenCaptureFromBase64String(ScreenShotHelper.CaptureScreenShot().ToString());
+                // Take a screenshot and attach an image
+                //string img = SaveScreenShotClass.SaveScreenshot("Screenshot");
+                //scenario.AddScreenCaptureFromPath(img);
             }
 
             //Close the browser

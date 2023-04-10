@@ -44,7 +44,7 @@ namespace TestSuite.StepDefinitions
         {
             Assert.That(driver.Title, Is.EqualTo("My Account"));
             Assert.That(MyAccountPage.GetAccountDashboard(), Is.EqualTo("Account Dashboard"));
-            Assert.That(MyAccountPage.GetWelcomeBack(), Is.EqualTo("Welcome back John"));
+            Assert.That(MyAccountPage.Header.GetTopCustomerMenu(), Is.EqualTo("Welcome back Johnn"));
         }
     }
 }
