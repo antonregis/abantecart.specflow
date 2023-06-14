@@ -6,27 +6,21 @@ namespace TestSuite.Utilities
     {
 
         // Base Url
-        public static string BaseUrl = Resource.BaseUrl;
+        public static string baseUrl = Resource.baseUrl;
 
         // Browser type (Chrome, Firefox, Edge, Headles Chrome)
-        public static int BrowserType = Int32.Parse(Resource.BrowserType);
-
-        // Memeber Username
-        public static string MemberUsername = Resource.MemberUsername;
-
-        // Memeber Password
-        public static string MemberPassword = Resource.MemberPassword;
+        public static int browserType = Int32.Parse(Resource.browserType);
 
         // Get Project directory path
-        public static string ProjectDirectoryPath = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + "\\";
+        public static string projectDirectoryPath = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + "\\";
 
         // ScreenshotPath 
-        public static string ScreenshotPath = ProjectDirectoryPath + Resource.ScreenshotPath + "\\";
+        public static string screenshotPath = projectDirectoryPath + Resource.screenshotPath + "\\";
 
         // ExtentReportsPath
-        public static string ReportPath = ProjectDirectoryPath + Resource.ReportPath + "\\";
+        public static string reportPath = projectDirectoryPath + Resource.reportPath + "\\";
 
         // ExcelDataPath
-        public static string ExcelDataPath = ProjectDirectoryPath + Resource.ExcelDataPath;
+        public static string excelDataPath = projectDirectoryPath + Resource.excelDataPath;
     }
 }

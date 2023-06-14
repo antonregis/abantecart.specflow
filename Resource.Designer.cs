@@ -63,108 +63,90 @@ namespace TestSuite {
         /// <summary>
         ///   Looks up a localized string similar to https://abantecart.codifyme.co.nz/.
         /// </summary>
-        internal static string BaseUrl {
+        internal static string baseUrl {
             get {
-                return ResourceManager.GetString("BaseUrl", resourceCulture);
+                return ResourceManager.GetString("baseUrl", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to 1.
         /// </summary>
-        internal static string BrowserType {
+        internal static string browserType {
             get {
-                return ResourceManager.GetString("BrowserType", resourceCulture);
+                return ResourceManager.GetString("browserType", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to TestData\Excel\Data.xlsx.
         /// </summary>
-        internal static string ExcelDataPath {
+        internal static string excelDataPath {
             get {
-                return ResourceManager.GetString("ExcelDataPath", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Passw0rd.
-        /// </summary>
-        internal static string MemberPassword {
-            get {
-                return ResourceManager.GetString("MemberPassword", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to testaccount.
-        /// </summary>
-        internal static string MemberUsername {
-            get {
-                return ResourceManager.GetString("MemberUsername", resourceCulture);
+                return ResourceManager.GetString("excelDataPath", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Dummy Client.
         /// </summary>
-        internal static string MetaData_Client {
+        internal static string metaData_Client {
             get {
-                return ResourceManager.GetString("MetaData_Client", resourceCulture);
+                return ResourceManager.GetString("metaData_Client", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Dummy Project.
         /// </summary>
-        internal static string MetaData_Project {
+        internal static string metaData_Project {
             get {
-                return ResourceManager.GetString("MetaData_Project", resourceCulture);
+                return ResourceManager.GetString("metaData_Project", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Anthony Regis.
         /// </summary>
-        internal static string MetaData_TestAnalyst {
+        internal static string metaData_TestAnalyst {
             get {
-                return ResourceManager.GetString("MetaData_TestAnalyst", resourceCulture);
+                return ResourceManager.GetString("metaData_TestAnalyst", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Basic Regression.
         /// </summary>
-        internal static string MetaData_TestingType {
+        internal static string metaData_TestingType {
             get {
-                return ResourceManager.GetString("MetaData_TestingType", resourceCulture);
+                return ResourceManager.GetString("metaData_TestingType", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Dummy UAT.
         /// </summary>
-        internal static string MetData_TestEnvironment {
+        internal static string metData_TestEnvironment {
             get {
-                return ResourceManager.GetString("MetData_TestEnvironment", resourceCulture);
+                return ResourceManager.GetString("metData_TestEnvironment", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to TestReport.
         /// </summary>
-        internal static string ReportPath {
+        internal static string reportPath {
             get {
-                return ResourceManager.GetString("ReportPath", resourceCulture);
+                return ResourceManager.GetString("reportPath", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to TestReport\Screenshots.
         /// </summary>
-        internal static string ScreenshotPath {
+        internal static string screenshotPath {
             get {
-                return ResourceManager.GetString("ScreenshotPath", resourceCulture);
+                return ResourceManager.GetString("screenshotPath", resourceCulture);
             }
         }
     }

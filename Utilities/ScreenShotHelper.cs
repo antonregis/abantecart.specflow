@@ -12,7 +12,7 @@ namespace TestSuite.Utilities
         {
             public static string SaveScreenshot(string ScreenShotFileName)
             {
-                var folderLocation = (EnvironmentHelper.ScreenshotPath);
+                var folderLocation = (EnvironmentHelper.screenshotPath);
 
                 if (!System.IO.Directory.Exists(folderLocation))
                 {

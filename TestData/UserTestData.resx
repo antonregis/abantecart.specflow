@@ -117,35 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="baseUrl" xml:space="preserve">
-    <value>https://abantecart.codifyme.co.nz/</value>
+  <data name="memberPassword" xml:space="preserve">
+    <value>Passw0rd</value>
   </data>
-  <data name="browserType" xml:space="preserve">
-    <value>1</value>
-    <comment>1-Chrome | 2-Headless Chrome | 3-Firefox | 4-Edge</comment>
-  </data>
-  <data name="excelDataPath" xml:space="preserve">
-    <value>TestData\Excel\Data.xlsx</value>
-  </data>
-  <data name="metaData_Client" xml:space="preserve">
-    <value>Dummy Client</value>
-  </data>
-  <data name="metaData_Project" xml:space="preserve">
-    <value>Dummy Project</value>
-  </data>
-  <data name="metaData_TestAnalyst" xml:space="preserve">
-    <value>Anthony Regis</value>
-  </data>
-  <data name="metaData_TestingType" xml:space="preserve">
-    <value>Basic Regression</value>
-  </data>
-  <data name="metData_TestEnvironment" xml:space="preserve">
-    <value>Dummy UAT</value>
-  </data>
-  <data name="reportPath" xml:space="preserve">
-    <value>TestReport</value>
-  </data>
-  <data name="screenshotPath" xml:space="preserve">
-    <value>TestReport\Screenshots</value>
+  <data name="memberUsername" xml:space="preserve">
+    <value>testaccount</value>
   </data>
 </root>

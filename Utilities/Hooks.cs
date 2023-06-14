@@ -22,15 +22,15 @@ namespace TestSuite.Utilities
         [BeforeTestRun]
         public static void InitializeExtentReports()
         {
-            var htmlReporter = new ExtentHtmlReporter(EnvironmentHelper.ReportPath);
+            var htmlReporter = new ExtentHtmlReporter(EnvironmentHelper.reportPath);
             extent = new ExtentReports();
             extent.AttachReporter(htmlReporter);
-            extent.AddSystemInfo("Client", Resource.MetaData_Client);
-            extent.AddSystemInfo("Project", Resource.MetaData_Project);
-            extent.AddSystemInfo("Testing Type", Resource.MetaData_TestingType);
-            extent.AddSystemInfo("Environment", Resource.MetData_TestEnvironment);
-            extent.AddSystemInfo("Host name", Resource.BaseUrl);            
-            extent.AddSystemInfo("Test Analyst", Resource.MetaData_TestAnalyst);
+            extent.AddSystemInfo("Client", Resource.metaData_Client);
+            extent.AddSystemInfo("Project", Resource.metaData_Project);
+            extent.AddSystemInfo("Testing Type", Resource.metaData_TestingType);
+            extent.AddSystemInfo("Environment", Resource.metData_TestEnvironment);
+            extent.AddSystemInfo("Host name", Resource.baseUrl);            
+            extent.AddSystemInfo("Test Analyst", Resource.metaData_TestAnalyst);
         }
 
         [BeforeFeature]
@@ -44,7 +44,7 @@ namespace TestSuite.Utilities
         public void Setup(ScenarioContext scenarioContext)
         {
             // Launch the browser
-            InitializeBrowser(EnvironmentHelper.BrowserType);
+            InitializeBrowser(EnvironmentHelper.browserType);
             
             // ExtentReport: Create node or the Scenario
             scenario = featureName.CreateNode<Scenario>(scenarioContext.ScenarioInfo.Title);

@@ -1,5 +1,4 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.DevTools.V108.Debugger;
 using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
@@ -11,19 +10,19 @@ namespace TestSuite.Utilities
     public class WaitHelper : Driver
     {
 
-        public static IWebElement WaitForElementToBeClickable(IWebElement element, int timeOutinSeconds = 20)
+        public static IWebElement WaitForElementToBeClickable(IWebElement element, int timeOutinSeconds = 10)
         {
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeOutinSeconds));
             return wait.Until(ExpectedConditions.ElementToBeClickable(element));
         }
 
-        public static IWebElement WaitForElement(By by, int timeOutinSeconds = 20)
+        public static IWebElement WaitForElement(By by, int timeOutinSeconds = 10)
         {
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeOutinSeconds));
             return (wait.Until(ExpectedConditions.ElementIsVisible(by)));
         }
 
-        public static void WaitForElementByXpath(string xpath, int timeOutinSeconds = 20)
+        public static void WaitForElementByXpath(string xpath, int timeOutinSeconds = 10)
         {
             WaitForElement(By.XPath(xpath), timeOutinSeconds);
         }
@@ -36,25 +35,5 @@ namespace TestSuite.Utilities
             Thread.Sleep(seconds * 1000);
         }
 
-        public static void WaitForPageToLoad()
-        {
-            String title = driver.Title;
-
-            if (title == "My Account")
-            {
-                WaitForElementByXpath("//body/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]");
-            }
-            else if (title == "Placeholder") 
-            {
-                WaitForElementByXpath("//*[@name='title']");                
-            }
-            else
-            {
-                // do nothing
-            }
-
-            // Adding time for unexpected time delay
-            Thread.Sleep(1000);
-        }
     }
 }

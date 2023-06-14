@@ -13,10 +13,10 @@ namespace TestSuite.Utilities
         public static IWebDriver driver = null!;
 
 
-        public static void InitializeBrowser(int BrowserType)
+        public static void InitializeBrowser(int browserType)
         {
             // Initializing browser
-            switch (BrowserType)
+            switch (browserType)
             {
                 case 1:
                     new WebDriverManager.DriverManager().SetUpDriver(new ChromeConfig());
@@ -42,24 +42,14 @@ namespace TestSuite.Utilities
                     Console.WriteLine("2 - Headless Chrome");
                     Console.WriteLine("3 - Firefox");
                     Console.WriteLine("4 - Edge");
-                    throw new NullReferenceException(BrowserType + " is Invalid Browser Type!");
+                    throw new NullReferenceException(browserType + " is Invalid Browser Type!");
             }
 
             // Implicit wait global time declaration
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(15);
 
             // Maximize browser window
             driver.Manage().Window.Maximize();
-        }
-
-        public static void NavigateToBaseUrl()
-        {
-            driver.Navigate().GoToUrl(EnvironmentHelper.BaseUrl);
-        }
-
-        public static void NavigateToUrl(string path)
-        {
-            driver.Navigate().GoToUrl(EnvironmentHelper.BaseUrl + path);
-        }
+        }        
     }
 }

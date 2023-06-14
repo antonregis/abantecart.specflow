@@ -5,12 +5,12 @@ using static TestSuite.Utilities.WaitHelper;
 
 namespace TestSuite.Pages
 {
-    public class EditAccountInfo : Driver
+    public class FooterBlock : Driver
     {
         
         #region  Initialize Web Elements
         
-        private static IWebElement Heading => driver.FindElement(By.CssSelector(".maintext"));
+        private static IWebElement placeholder => driver.FindElement(By.XPath(""));
 
         #endregion
 
@@ -21,9 +21,9 @@ namespace TestSuite.Pages
         }
 
 
-        internal string GetHeading()
+        internal string GetPlaceholdert()
         {
-            return Heading.Text.Trim();
+            return placeholder.Text;
         }
     }
 }
