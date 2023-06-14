@@ -5,25 +5,25 @@ using static TestSuite.Utilities.WaitHelper;
 
 namespace TestSuite.Pages
 {
-    public class Sortby : Driver
+    public class TemplatePOM : Driver
     {
 
         #region  Initialize Web Elements
 
-        private static IWebElement Placeholder => driver.FindElement(By.XPath(""));
+        private static IWebElement placeholder => driver.FindElement(By.XPath(""));
 
         #endregion
 
 
-        internal void PlaceHolderMethodName()
+        public void PlaceHolderMethodName()
         {
             // Your code here
         }
 
 
-        internal string GetPlaceholder()
+        public string GetPlaceholder()
         {
-            return Placeholder.Text;
+            return placeholder.Text;
         }
     }
 }
