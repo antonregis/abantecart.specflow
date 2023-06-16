@@ -70,7 +70,7 @@ namespace TestSuite.TestData {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to testaccount.
+        ///   Looks up a localized string similar to anton.
         /// </summary>
         internal static string memberUsername {
             get {

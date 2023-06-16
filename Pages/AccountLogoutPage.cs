@@ -7,9 +7,16 @@ namespace TestSuite.Pages
 {
     public class AccountLogoutPage : Driver
     {
-        
+        public AccountLogoutPage()
+        {
+            HeaderBlock = new HeaderBlock();
+        }
+
+        public HeaderBlock HeaderBlock { get; internal set; }
+
+
         #region  Initialize Web Elements
-        
+
         private static IWebElement accountLogoutHeader => driver.FindElement(By.XPath("//span[@class='maintext']"));
         private static IWebElement accountLogoutMessage => driver.FindElement(By.CssSelector(".mb40"));
 

@@ -20,7 +20,8 @@ namespace TestSuite.Pages
 
         #region  Initialize Web Elements
 
-        private static IWebElement placeholder => driver.FindElement(By.XPath(""));
+        private static IWebElement headerstripBlock => driver.FindElement(By.CssSelector(".headerstrip"));
+        private static IWebElement featuredBlock => driver.FindElement(By.Id("featured"));        
 
         #endregion
 
@@ -30,10 +31,13 @@ namespace TestSuite.Pages
             // Your code here
         }
 
-
-        public string GetPlaceholder()
+        public bool IsHeaderstripBlockLoaded()
         {
-            return placeholder.Text;
+            return headerstripBlock.Displayed;
+        }
+        public bool IsFeaturedBlockLoaded()
+        {
+            return featuredBlock.Displayed;
         }
     }
 }

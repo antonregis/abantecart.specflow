@@ -15,7 +15,7 @@ namespace TestSuite.Pages
         private static IWebElement accountMenuDropdown => driver.FindElement(By.CssSelector("li[class='dropdown'] a[class='top menu_account'] span[class='menu_text']"));
         private static IWebElement loginLink => driver.FindElement(By.CssSelector("li[class='dropdown open'] a[class='sub menu_login']"));
         private static IWebElement checkYourOrderLink => driver.FindElement(By.CssSelector("li[class='dropdown'] span[class='menu_text']"));
-        
+        private static IWebElement headerName => driver.FindElement(By.CssSelector(".maintext"));
         #endregion
 
 
@@ -34,6 +34,11 @@ namespace TestSuite.Pages
         internal string GetTopCustomerMenu() 
         {
             return topCustomerMenu.Text;
+        }
+
+        internal string GetHeaderName()
+        {
+            return headerName.Text.Trim();
         }
     }
 }

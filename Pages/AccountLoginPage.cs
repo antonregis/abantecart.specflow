@@ -10,10 +10,10 @@ namespace TestSuite.Pages
 
         public AccountLoginPage()
         {
-            Header = new HeaderBlock();
+            HeaderBlock = new HeaderBlock();
         }
 
-        public HeaderBlock Header { get; internal set; }
+        public HeaderBlock HeaderBlock { get; internal set; }
 
 
         #region  Initialize Web Elements
@@ -21,7 +21,6 @@ namespace TestSuite.Pages
         private static IWebElement loginNameField => driver.FindElement(By.CssSelector("#loginFrm_loginname"));
         private static IWebElement passwordField => driver.FindElement(By.CssSelector("#loginFrm_password"));
         private static IWebElement loginButton => driver.FindElement(By.CssSelector("button[title='Login']"));
-        private static IWebElement placeholder => driver.FindElement(By.XPath(""));
 
         #endregion
 
@@ -29,32 +28,12 @@ namespace TestSuite.Pages
         public void EnterUserCredentials()
         {
             loginNameField.SendKeys(UserTestData.memberUsername);            
-            passwordField.SendKeys(UserTestData.memberPassword);
+            passwordField.SendKeys(UserTestData.memberPassword);         
+        }
+
+        public void ClickLogin()
+        {
             loginButton.Click();
-        }
-
-        public void FullLoginProcess() 
-        {
-            Utils.NavigateToUrl("index.php?rt=account/login");
-            EnterUserCredentials();        
-        }
-
-        public void IsUserLoggedIn() 
-        {
-            Console.WriteLine(Header.GetTopCustomerMenu());
-            string topCustomerMenuContent = Header.GetTopCustomerMenu();
-
-            if (!topCustomerMenuContent.Contains("Welcome")) 
-            {
-                Console.WriteLine("Is not logged in");
-                //FullLoginProcess();
-            }
-        
-        }
-
-        public string GetPlaceholder()
-        {
-            return placeholder.Text;
         }
     }
 }

@@ -19,11 +19,5 @@ namespace TestSuite.Utilities
         {
             driver.Navigate().GoToUrl(EnvironmentHelper.baseUrl + path);
         }
-
-
-        public static void Placeholder()
-        {
-            // Do nothing at the moment
-        }
     }
 }

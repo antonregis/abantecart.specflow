@@ -5,27 +5,27 @@ using static TestSuite.Utilities.WaitHelper;
 
 namespace TestSuite.Pages
 {
-    public class MyAccountPage : Driver
+    public class TemplatePagePOM : Driver
     {
-        
-        public MyAccountPage() 
+
+        public TemplatePagePOM()
         {
-            SideNavigationBlock = new SideNavigationBlock();
             HeaderBlock = new HeaderBlock();
+            Footer = new FooterBlock();
         }
 
-        public SideNavigationBlock SideNavigationBlock { get; internal set; }
         public HeaderBlock HeaderBlock { get; internal set; }
+        public FooterBlock Footer { get; internal set; }
 
 
         #region  Initialize Web Elements
 
-        private static IWebElement placeholder => driver.FindElement(By.XPath(""));
+        IWebElement placeholder => driver.FindElement(By.XPath(""));
 
         #endregion
 
 
-        public void PlaceHolderMethodName()
+        public void PlaceholderMethodName()
         {
             // Your code here
         }
