@@ -11,10 +11,12 @@ namespace TestSuite.Pages
         public HomePage() 
         {
             HeaderBlock = new HeaderBlock();
+            SubHeaderBlock = new SubHeaderBlock();
             FooterBlock = new FooterBlock();
         }
 
         public HeaderBlock HeaderBlock { get; internal set; }
+        public SubHeaderBlock SubHeaderBlock { get; internal set; }
         public FooterBlock FooterBlock { get; internal set; }
 
 

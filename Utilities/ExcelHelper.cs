@@ -7,6 +7,17 @@ namespace TestSuite.Utilities
 {
     public class ExcelHelper
     {
+        // How to use this method:
+        // Let's assume we have an excel file named Data.xlsx
+        // and it has a sheet named "SignIn"
+        // and value of row 1 in column A is "Username"
+        // and value of row 2 in column A is "anthony".
+        // Row 1 serves as the column label and anything under it are its associated values.
+        // To access row 2 in column A, use this syntax:
+        // ExcelHelper.PopulateInCollection(EnvironmentHelper.excelDataPath, "SignIn");
+        // ExcelHelper.ReadData(2,"Username");
+
+
         private static readonly List<Datacollection> DataCol = new List<Datacollection>();
 
 

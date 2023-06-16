@@ -3,6 +3,8 @@ using TechTalk.SpecFlow;
 using TestSuite.Utilities;
 using TestSuite.Pages;
 using NUnit.Framework;
+using static TestSuite.Utilities.WaitHelper;
+
 
 namespace TestSuite.StepDefinitions
 {
@@ -18,7 +20,7 @@ namespace TestSuite.StepDefinitions
         [Given(@"I am on the home page")]
         public void GivenIAmOnTheHomePage()
         {
-            Utils.NavigateToBaseUrl();
+            Utils.NavigateToBaseUrl();            
         }
 
         [When(@"I click Login or register")]
@@ -30,7 +32,7 @@ namespace TestSuite.StepDefinitions
         [Then(@"Account Login page appears")]
         public void ThenAccountLoginPageAppears()
         {
-            Assert.That(accountLoginPage.HeaderBlock.GetHeaderName(), Is.EqualTo("ACCOUNT LOGIN"));
+            Assert.That(accountLoginPage.SubHeaderBlock.GetHeaderName(), Is.EqualTo("ACCOUNT LOGIN"));
         }
 
         [When(@"I enter my Login Name and Password")]
@@ -48,7 +50,7 @@ namespace TestSuite.StepDefinitions
         [Then(@"My Account page appears with a Welcome back message")]
         public void ThenMyAccountPageAppearsWithAWelcomeBackMessage()
         {
-            Assert.That(myAccountPage.HeaderBlock.GetHeaderName(), Is.EqualTo("MY ACCOUNT"));
+            Assert.That(myAccountPage.SubHeaderBlock.GetHeaderName(), Is.EqualTo("MY ACCOUNT"));
             Assert.That(myAccountPage.HeaderBlock.GetTopCustomerMenu().Contains("Welcome back"));
         }
 
@@ -61,7 +63,7 @@ namespace TestSuite.StepDefinitions
         [Then(@"Account Logout page appears")]
         public void ThenAccountLogoutPageAppears()
         {
-            Assert.That(accountLogoutPage.HeaderBlock.GetHeaderName(), Is.EqualTo("ACCOUNT LOGOUT"));
+            Assert.That(accountLogoutPage.SubHeaderBlock.GetHeaderName(), Is.EqualTo("ACCOUNT LOGOUT"));
         }
     }
 }

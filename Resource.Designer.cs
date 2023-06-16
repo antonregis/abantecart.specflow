@@ -81,9 +81,9 @@ namespace TestSuite {
         /// <summary>
         ///   Looks up a localized string similar to TestData\Excel\Data.xlsx.
         /// </summary>
-        internal static string excelDataPath {
+        internal static string excelTestData {
             get {
-                return ResourceManager.GetString("excelDataPath", resourceCulture);
+                return ResourceManager.GetString("excelTestData", resourceCulture);
             }
         }
         

@@ -12,10 +12,10 @@ namespace TestSuite.Pages
 
         private static IWebElement topCustomerMenu => driver.FindElement(By.XPath("//ul[@id='customer_menu_top']//li//a"));
         private static IWebElement logoffLink => driver.FindElement(By.XPath("//div[@id='customernav']//li[10]//a[1]"));
-        private static IWebElement accountMenuDropdown => driver.FindElement(By.CssSelector("li[class='dropdown'] a[class='top menu_account'] span[class='menu_text']"));
-        private static IWebElement loginLink => driver.FindElement(By.CssSelector("li[class='dropdown open'] a[class='sub menu_login']"));
+        private static IWebElement accountMenu => driver.FindElement(By.XPath("//*[@id='main_menu_top']/li[2]/a/span"));        
+        private static IWebElement accountMenuLoginLink => driver.FindElement(By.CssSelector("li[class='dropdown open'] a[class='sub menu_login']"));
         private static IWebElement checkYourOrderLink => driver.FindElement(By.CssSelector("li[class='dropdown'] span[class='menu_text']"));
-        private static IWebElement headerName => driver.FindElement(By.CssSelector(".maintext"));
+
         #endregion
 
 
@@ -31,14 +31,16 @@ namespace TestSuite.Pages
             logoffLink.Click();
         }
 
+        internal void ClickAccountMenuLoginLink()
+        {           
+            WebElementHelper.MouseOverHelper(accountMenu);
+            WaitForElementToBeClickable(accountMenuLoginLink);
+            accountMenuLoginLink.Click();
+        }
+
         internal string GetTopCustomerMenu() 
         {
             return topCustomerMenu.Text;
-        }
-
-        internal string GetHeaderName()
-        {
-            return headerName.Text.Trim();
         }
     }
 }

@@ -11,11 +11,13 @@ namespace TestSuite.Pages
         public TemplatePagePOM()
         {
             HeaderBlock = new HeaderBlock();
-            Footer = new FooterBlock();
+            SubHeaderBlock = new SubHeaderBlock();
+            FooterBlock = new FooterBlock();
         }
 
         public HeaderBlock HeaderBlock { get; internal set; }
-        public FooterBlock Footer { get; internal set; }
+        public SubHeaderBlock SubHeaderBlock { get; internal set; }
+        public FooterBlock FooterBlock { get; internal set; }
 
 
         #region  Initialize Web Elements

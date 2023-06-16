@@ -21,6 +21,6 @@ namespace TestSuite.Utilities
         public static string reportPath = projectDirectoryPath + Resource.reportPath + "\\";
 
         // ExcelDataPath
-        public static string excelDataPath = projectDirectoryPath + Resource.excelDataPath;
+        public static string excelTestData = projectDirectoryPath + Resource.excelTestData;
     }
 }

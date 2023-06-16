@@ -11,9 +11,11 @@ namespace TestSuite.Pages
         public AccountLoginPage()
         {
             HeaderBlock = new HeaderBlock();
+            SubHeaderBlock = new SubHeaderBlock();
         }
 
         public HeaderBlock HeaderBlock { get; internal set; }
+        public SubHeaderBlock SubHeaderBlock { get; internal set; }
 
 
         #region  Initialize Web Elements

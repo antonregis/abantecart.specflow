@@ -124,7 +124,7 @@
     <value>1</value>
     <comment>1-Chrome | 2-Headless Chrome | 3-Firefox | 4-Edge</comment>
   </data>
-  <data name="excelDataPath" xml:space="preserve">
+  <data name="excelTestData" xml:space="preserve">
     <value>TestData\Excel\Data.xlsx</value>
   </data>
   <data name="metaData_Client" xml:space="preserve">
