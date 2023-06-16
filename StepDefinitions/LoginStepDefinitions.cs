@@ -48,8 +48,8 @@ namespace TestSuite.StepDefinitions
         [Then(@"My Account page appears with a Welcome back message")]
         public void ThenMyAccountPageAppearsWithAWelcomeBackMessage()
         {
-            Assert.That(accountLoginPage.HeaderBlock.GetHeaderName(), Is.EqualTo("MY ACCOUNT"));
-            Assert.That(accountLoginPage.HeaderBlock.GetTopCustomerMenu().Contains("Welcome back"));
+            Assert.That(myAccountPage.HeaderBlock.GetHeaderName(), Is.EqualTo("MY ACCOUNT"));
+            Assert.That(myAccountPage.HeaderBlock.GetTopCustomerMenu().Contains("Welcome back"));
         }
 
         [When(@"I click Logoff")]
