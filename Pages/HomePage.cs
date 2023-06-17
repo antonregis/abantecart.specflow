@@ -123,6 +123,11 @@ namespace TestSuite.Pages
             return logoImage.Displayed;
         }
 
+        public string GetLogoImageSrc() 
+        {
+            return logoImage.GetAttribute("src");
+        }
+
         public bool IsLogoImageSourceFileFound() 
         {
             HttpClient httpClient = new HttpClient();

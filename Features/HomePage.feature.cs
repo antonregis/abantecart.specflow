@@ -143,11 +143,11 @@ this.ScenarioInitialize(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("TC04 Check website logo is displayed correctly")]
-        [NUnit.Framework.CategoryAttribute("InDevelopment")]
+        [NUnit.Framework.CategoryAttribute("SmokeTest")]
         public void TC04CheckWebsiteLogoIsDisplayedCorrectly()
         {
             string[] tagsOfScenario = new string[] {
-                    "InDevelopment"};
+                    "SmokeTest"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC04 Check website logo is displayed correctly", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 23
@@ -167,6 +167,9 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Then("Logo element is displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 26
+ testRunner.And("Logo image src Url is correct \"resources/image/18/73/3.png\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 27
  testRunner.And("Logo image file exists in the specified Url", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }

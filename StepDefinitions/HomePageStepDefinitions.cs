@@ -2,6 +2,8 @@ using NUnit.Framework;
 using System;
 using TechTalk.SpecFlow;
 using TestSuite.Pages;
+using TestSuite.Utilities;
+
 
 namespace TestSuite.StepDefinitions
 {
@@ -102,6 +104,12 @@ namespace TestSuite.StepDefinitions
         public void ThenLogoElementIsDisplayed()
         {
             Assert.IsTrue(homePage.IsLogoImageLoaded());
+        }
+
+        [Then(@"Logo image src Url is correct ""([^""]*)""")]
+        public void ThenLogoImageSrcUrlIsCorrect(string p0)
+        {
+            Assert.That(homePage.GetLogoImageSrc(), Is.EqualTo(EnvironmentHelper.baseUrl + p0));
         }
 
         [Then(@"Logo image file exists in the specified Url")]

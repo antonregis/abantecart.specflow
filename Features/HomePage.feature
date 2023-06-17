@@ -23,4 +23,5 @@ Scenario: TC03 Check all Homepage block elements are displayed
 Scenario: TC04 Check website logo is displayed correctly
 	Given I am on the home page
 	Then Logo element is displayed
+	And Logo image src Url is correct "resources/image/18/73/3.png"
 	And Logo image file exists in the specified Url
