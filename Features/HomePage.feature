@@ -18,3 +18,9 @@ Scenario: TC03 Check all Homepage block elements are displayed
 	And footersocial block element is displayed
 	And footerlinks block element is displayed
 	And copyrightbottom block element is displayed
+
+@SmokeTest
+Scenario: TC04 Check website logo is displayed correctly
+	Given I am on the home page
+	Then Logo element is displayed
+	And Logo image file exists in the specified Url

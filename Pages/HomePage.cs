@@ -1,7 +1,8 @@
 ﻿using TestSuite.Utilities;
 using OpenQA.Selenium;
 using static TestSuite.Utilities.WaitHelper;
-
+using System.Net;
+using System.Net.Http;
 
 namespace TestSuite.Pages
 {
@@ -36,6 +37,8 @@ namespace TestSuite.Pages
         private static IWebElement footersocialBlock => driver.FindElement(By.CssSelector(".footersocial"));
         private static IWebElement footerlinksBlock => driver.FindElement(By.CssSelector(".footerlinks"));
         private static IWebElement copyrightbottomBlock => driver.FindElement(By.CssSelector(".copyrightbottom"));
+        private static IWebElement logoElement => driver.FindElement(By.CssSelector(".logo"));
+        private static IWebElement logoImage => driver.FindElement(By.XPath("//img[@title='AbanteCart']"));
 
         #endregion
 
@@ -113,6 +116,31 @@ namespace TestSuite.Pages
         public bool IsCopyrightbottomBlockLoaded()
         {
             return copyrightbottomBlock.Displayed;
+        }
+
+        public bool IsLogoImageLoaded() 
+        { 
+            return logoImage.Displayed;
+        }
+
+        public bool IsLogoImageSourceFileFound() 
+        {
+            HttpClient httpClient = new HttpClient();
+            string imageUrl = logoImage.GetAttribute("src");
+            HttpResponseMessage response = httpClient.GetAsync(imageUrl).Result;
+            HttpStatusCode statusCode = response.StatusCode;            
+            bool status;
+
+            if (statusCode == HttpStatusCode.OK)
+            {
+                status = true;
+            }
+            else 
+            {
+                status = false;
+            }
+
+            return status;
         }
     }
 }

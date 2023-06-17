@@ -94,5 +94,20 @@ namespace TestSuite.StepDefinitions
         {
             Assert.IsTrue(homePage.IsCopyrightbottomBlockLoaded());
         }
+
+
+        // Check website logo is displayed correctly
+
+        [Then(@"Logo element is displayed")]
+        public void ThenLogoElementIsDisplayed()
+        {
+            Assert.IsTrue(homePage.IsLogoImageLoaded());
+        }
+
+        [Then(@"Logo image file exists in the specified Url")]
+        public void ThenLogoImageFileExistsInTheSpecifiedUrl()
+        {
+            Assert.IsTrue(homePage.IsLogoImageSourceFileFound());
+        }
     }
 }
