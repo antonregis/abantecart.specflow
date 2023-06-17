@@ -117,5 +117,22 @@ namespace TestSuite.StepDefinitions
         {
             Assert.IsTrue(homePage.IsLogoImageSourceFileFound());
         }
+
+
+        // Check website logo links to homepage on the same tab
+
+        [Then(@"Logo href URL is correct")]
+        public void ThenLogoHrefURLIsCorrect()
+        {
+            Assert.That(homePage.GetLogoImageLink(), Is.EqualTo(EnvironmentHelper.baseUrl));
+        }
+
+        [Then(@"HTML link tag does not have target and onclick attributes")]
+        public void ThenHTMLLinkTagDoesNotHaveTargetAndOnclickAttributes()
+        {
+            Console.Write("Link tag content: " + homePage.GetLogoImageHtmlLinkContent());
+            Assert.That(homePage.GetLogoImageHtmlLinkContent(), Does.Not.Contain("target"));
+            Assert.That(homePage.GetLogoImageHtmlLinkContent(), Does.Not.Contain("onclick"));
+        }
     }
 }

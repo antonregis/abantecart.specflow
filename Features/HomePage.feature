@@ -19,9 +19,17 @@ Scenario: TC03 Check all Homepage block elements are displayed
 	And footerlinks block element is displayed
 	And copyrightbottom block element is displayed
 
+
 @SmokeTest
 Scenario: TC04 Check website logo is displayed correctly
 	Given I am on the home page
 	Then Logo element is displayed
 	And Logo image src Url is correct "resources/image/18/73/3.png"
 	And Logo image file exists in the specified Url
+
+
+@SmokeTest
+Scenario: TC05 Check website logo links to homepage on the same tab
+	Given I am on the home page
+	Then Logo href URL is correct
+	And HTML link tag does not have target and onclick attributes

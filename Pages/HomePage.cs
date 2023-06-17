@@ -37,7 +37,7 @@ namespace TestSuite.Pages
         private static IWebElement footersocialBlock => driver.FindElement(By.CssSelector(".footersocial"));
         private static IWebElement footerlinksBlock => driver.FindElement(By.CssSelector(".footerlinks"));
         private static IWebElement copyrightbottomBlock => driver.FindElement(By.CssSelector(".copyrightbottom"));
-        private static IWebElement logoElement => driver.FindElement(By.CssSelector(".logo"));
+        private static IWebElement logoImageLink => driver.FindElement(By.CssSelector(".logo"));
         private static IWebElement logoImage => driver.FindElement(By.XPath("//img[@title='AbanteCart']"));
 
         #endregion
@@ -146,6 +146,16 @@ namespace TestSuite.Pages
             }
 
             return status;
+        }
+
+        public string GetLogoImageLink() 
+        { 
+            return logoImageLink.GetAttribute("href");
+        }
+
+        public string GetLogoImageHtmlLinkContent()
+        {
+            return logoImageLink.GetAttribute("innerHTML").ToLower();
         }
     }
 }
