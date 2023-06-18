@@ -21,6 +21,7 @@ namespace TestSuite.Utilities
             driver.Navigate().GoToUrl(EnvironmentHelper.baseUrl + path);
         }
 
+
         public static bool IsUrlWorking(IWebElement element, string attribute)
         {
             bool status;
@@ -50,6 +51,7 @@ namespace TestSuite.Utilities
             return status;
         }
 
+
         public static bool AreAllLinksWorking(IWebElement element, int linkCount)
         {
             HttpClient httpClient = new HttpClient();
@@ -66,7 +68,7 @@ namespace TestSuite.Utilities
             }
             else if (linkElements.Count != linkCount) 
             {
-                throw new NoSuchElementException("Expected number of links is " + linkCount + ", but actual is " + linkElements.Count +".");
+                throw new ArgumentException("Expected number of links is " + linkCount + ", but actual is " + linkElements.Count +".");
             }
 
             // Iterate through each <a> element and gather each result
@@ -79,7 +81,7 @@ namespace TestSuite.Utilities
                 result = result + statusCode + " ";
             }
 
-            Console.WriteLine("Links found: " + linkElements.Count);
+            Console.WriteLine(linkElements.Count + " links found");
 
             // statusCode is either OK / NotFound.
             // If result "does not" contains NotFound, this means all results are OK.
