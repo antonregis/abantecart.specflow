@@ -35,10 +35,11 @@ namespace TestSuite.Pages
         private static IWebElement fragranceMenuDropdown => driver.FindElement(By.XPath("//*[@id='categorymenu']/nav/ul/li[5]/div"));
         private static IWebElement menMenuDropdown => driver.FindElement(By.XPath("//*[@id='categorymenu']/nav/ul/li[6]/div"));
         private static IWebElement hairCareMenuDropdown => driver.FindElement(By.XPath("//*[@id='categorymenu']/nav/ul/li[7]/div"));
-        private static IWebElement booksMenuDropdown => driver.FindElement(By.XPath("//*[@id='categorymenu']/nav/ul/li[8]/div"));        
+        private static IWebElement booksMenuDropdown => driver.FindElement(By.XPath("//*[@id='categorymenu']/nav/ul/li[8]/div"));
 
         #endregion
 
+        #region Hide this region temporarily
 
         internal void ClickLoginOrRegisterLink()
         {
@@ -62,16 +63,16 @@ namespace TestSuite.Pages
         internal void ClickMenCategory() 
         {
             WebElementHelper.MouseOverHelper(menMenuBtn);            
-        }
-
-        internal void MouseoverHomeMenuBtn() 
-        {
-            WebElementHelper.MouseOverHelper(homeMenuBtn);
-        }
+        }        
 
         internal string GetTopCustomerMenu() 
         {
             return topCustomerMenu.Text;
+        }
+
+        internal void MouseoverHomeMenuBtn()
+        {
+            WebElementHelper.MouseOverHelper(homeMenuBtn);
         }
 
         internal bool IsHomeMenuBtnLinkWorking() 
@@ -83,5 +84,23 @@ namespace TestSuite.Pages
         {
             return Utils.AreAllLinksWorking(homeMenuDropdown, 6);
         }
+
+        #endregion
+
+        internal void MouseoverApparelAccessoriesMenuBtn()
+        {
+            WebElementHelper.MouseOverHelper(apparelAccessoriesMenuBtn);
+        }
+
+        internal bool IsApparelAccessoriesMenuBtnLinkWorking()
+        {
+            return Utils.IsUrlWorking(apparelAccessoriesMenuBtn, "href");
+        }
+
+        internal bool AreApparelAccessoriesMenuDropdownLinksWorking()
+        {
+            return Utils.AreAllLinksWorking(apparelAccessoriesMenuDropdown, 2);
+        }
+
     }
 }
