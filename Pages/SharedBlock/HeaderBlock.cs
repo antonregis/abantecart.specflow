@@ -120,7 +120,7 @@ namespace TestSuite.Pages
             WebElementHelper.MouseOverHelper(skincareMenuBtn);
         }
 
-        internal bool IsSkinCareMenuBtnLinkWorking()
+        internal bool IsSkincareMenuBtnLinkWorking()
         {
             return Utils.IsUrlWorking(skincareMenuBtn, "href");
         }
@@ -131,5 +131,20 @@ namespace TestSuite.Pages
         }
 
         #endregion
+
+        internal void MouseoverFragranceMenuBtn()
+        {
+            WebElementHelper.MouseOverHelper(fragranceMenuBtn);
+        }
+
+        internal bool IsFragranceMenuBtnLinkWorking()
+        {
+            return Utils.IsUrlWorking(fragranceMenuBtn, "href");
+        }
+
+        internal bool AreFragranceMenuDropdownLinksWorking()
+        {
+            return Utils.AreAllLinksWorking(fragranceMenuDropdown, 2);
+        }
     }
 }

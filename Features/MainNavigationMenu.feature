@@ -32,3 +32,10 @@ Scenario: TC09 Check main menu Skincare category is functional
 	When I mouseover SKINCARE Menu button
 	Then SKINCARE dropdown appears and All links are working
 
+
+@InDev
+Scenario: TC10 Check main menu Fragrance category is functional
+	Given I am on the home page
+	Then FRAGRANCE Menu link is working
+	When I mouseover FRAGRANCE Menu button
+	Then FRAGRANCE dropdown appears and All links are working

@@ -79,7 +79,7 @@ namespace TestSuite.StepDefinitions
         [Then(@"SKINCARE Menu link is working")]
         public void ThenSKINCAREMenuLinkIsWorking()
         {
-            Assert.IsTrue(homePage.HeaderBlock.IsSkinCareMenuBtnLinkWorking());
+            Assert.IsTrue(homePage.HeaderBlock.IsSkincareMenuBtnLinkWorking());
         }
 
         [When(@"I mouseover SKINCARE Menu button")]
@@ -92,6 +92,27 @@ namespace TestSuite.StepDefinitions
         public void ThenSKINCAREDropdownAppearsAndAllLinksAreWorking()
         {
             Assert.IsTrue(homePage.HeaderBlock.AreSkincareMenuDropdownLinksWorking());
+        }
+
+
+        // FRAGRANCE Menu
+
+        [Then(@"FRAGRANCE Menu link is working")]
+        public void ThenFRAGRANCEMenuLinkIsWorking()
+        {
+            Assert.IsTrue(homePage.HeaderBlock.IsFragranceMenuBtnLinkWorking());
+        }
+
+        [When(@"I mouseover FRAGRANCE Menu button")]
+        public void WhenIMouseoverFRAGRANCEMenuButton()
+        {
+            homePage.HeaderBlock.MouseoverFragranceMenuBtn();
+        }
+
+        [Then(@"FRAGRANCE dropdown appears and All links are working")]
+        public void ThenFRAGRANCEDropdownAppearsAndAllLinksAreWorking()
+        {
+            Assert.IsTrue(homePage.HeaderBlock.AreFragranceMenuDropdownLinksWorking());
         }
     }
 }
