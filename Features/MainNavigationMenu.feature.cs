@@ -215,11 +215,11 @@ this.ScenarioInitialize(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("TC10 Check main menu Fragrance category is functional")]
-        [NUnit.Framework.CategoryAttribute("InDev")]
+        [NUnit.Framework.CategoryAttribute("SmokeTest")]
         public void TC10CheckMainMenuFragranceCategoryIsFunctional()
         {
             string[] tagsOfScenario = new string[] {
-                    "InDev"};
+                    "SmokeTest"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC10 Check main menu Fragrance category is functional", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 37
