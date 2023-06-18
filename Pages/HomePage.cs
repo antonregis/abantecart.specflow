@@ -130,22 +130,7 @@ namespace TestSuite.Pages
 
         public bool IsLogoImageSourceFileFound() 
         {
-            HttpClient httpClient = new HttpClient();
-            string imageUrl = logoImage.GetAttribute("src");
-            HttpResponseMessage response = httpClient.GetAsync(imageUrl).Result;
-            HttpStatusCode statusCode = response.StatusCode;            
-            bool status;
-
-            if (statusCode == HttpStatusCode.OK)
-            {
-                status = true;
-            }
-            else 
-            {
-                status = false;
-            }
-
-            return status;
+            return Utils.IsUrlWorking(logoImage, "src");
         }
 
         public string GetLogoImageLink() 
