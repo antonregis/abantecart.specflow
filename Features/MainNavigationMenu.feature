@@ -2,7 +2,7 @@
 
 
 @SmokeTest
-Scenario: Check main menu Home category is functional
+Scenario: TC06 Check main menu Home category is functional
 	Given I am on the home page
 	Then HOME Menu link is working
 	When I mouseover HOME Menu button
