@@ -15,3 +15,11 @@ Scenario: TC07 Check main menu Apparel & Accessories category is functional
 	Then APPAREL & ACCESSORIES Menu link is working
 	When I mouseover APPAREL & ACCESSORIES Menu button
 	Then APPAREL & ACCESSORIES dropdown appears and All links are working
+
+
+@SmokeTest
+Scenario: TC08 Check main menu Makeup category is functional
+	Given I am on the home page
+	Then MAKEUP Menu link is working
+	When I mouseover MAKEUP Menu button
+	Then MAKEUP dropdown appears and All links are working

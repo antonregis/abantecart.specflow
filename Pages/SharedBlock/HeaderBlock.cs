@@ -84,9 +84,7 @@ namespace TestSuite.Pages
         {
             return Utils.AreAllLinksWorking(homeMenuDropdown, 6);
         }
-
-        #endregion
-
+       
         internal void MouseoverApparelAccessoriesMenuBtn()
         {
             WebElementHelper.MouseOverHelper(apparelAccessoriesMenuBtn);
@@ -102,5 +100,21 @@ namespace TestSuite.Pages
             return Utils.AreAllLinksWorking(apparelAccessoriesMenuDropdown, 2);
         }
 
+        #endregion
+
+        internal void MouseoverMakeupMenuBtn()
+        {
+            WebElementHelper.MouseOverHelper(makeupMenuBtn);
+        }
+
+        internal bool IsMakeupMenuBtnLinkWorking()
+        {
+            return Utils.IsUrlWorking(makeupMenuBtn, "href");
+        }
+
+        internal bool AreMakeupMenuDropdownLinksWorking()
+        {
+            return Utils.AreAllLinksWorking(makeupMenuDropdown, 6);
+        }
     }
 }
