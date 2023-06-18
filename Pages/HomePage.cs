@@ -39,7 +39,7 @@ namespace TestSuite.Pages
         private static IWebElement copyrightbottomBlock => driver.FindElement(By.CssSelector(".copyrightbottom"));
         private static IWebElement logoImageLink => driver.FindElement(By.CssSelector(".logo"));
         private static IWebElement logoImage => driver.FindElement(By.XPath("//img[@title='AbanteCart']"));
-
+        
         #endregion
 
 
@@ -156,6 +156,6 @@ namespace TestSuite.Pages
         public string GetLogoImageHtmlLinkContent()
         {
             return logoImageLink.GetAttribute("innerHTML").ToLower();
-        }
+        }        
     }
 }

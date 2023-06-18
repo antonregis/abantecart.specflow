@@ -10,7 +10,7 @@ namespace TestSuite.Pages
         
         #region  Initialize Web Elements
         
-        private static IWebElement placeholder => driver.FindElement(By.XPath(""));
+        private static IWebElement footerLinks => driver.FindElement(By.XPath("//div[@class='pull-left']"));
 
         #endregion
 
@@ -21,9 +21,9 @@ namespace TestSuite.Pages
         }
 
 
-        internal string GetPlaceholdert()
+        internal bool AreAllFooterLinksWorking()
         {
-            return placeholder.Text;
+            return Utils.AreAllLinksWorking(footerLinks, 6);
         }
     }
 }

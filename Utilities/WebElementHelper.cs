@@ -32,6 +32,6 @@ namespace TestSuite.Utilities
             Actions a = new Actions(Driver.driver);
             a.MoveToElement(Driver.driver.FindElement(By.XPath(xpath))).Perform();
             Thread.Sleep(1000);
-        }
+        }        
     }
 }
