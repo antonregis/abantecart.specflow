@@ -25,8 +25,8 @@ namespace TestSuite.StepDefinitions
             homePage.HeaderBlock.MouseoverHomeMenuBtn();
         }
 
-        [Then(@"All links in the HOME Menu dropdown are working")]
-        public void ThenAllLinksInTheHOMEMenuDropdownAreWorking()
+        [Then(@"HOME dropdown appears and All links are working")]
+        public void ThenHOMEDropdownAppearsAndAllLinksAreWorking()
         {
             Assert.IsTrue(homePage.HeaderBlock.AreHomeMenuDropdownLinksWorking());
         }

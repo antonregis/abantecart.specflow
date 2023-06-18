@@ -102,7 +102,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("I mouseover HOME Menu button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 9
- testRunner.Then("All links in the HOME Menu dropdown are working", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("HOME dropdown appears and All links are working", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -110,11 +110,11 @@ this.ScenarioInitialize(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("TC07 Check main menu Apparel & Accessories category is functional")]
-        [NUnit.Framework.CategoryAttribute("InDevelopment")]
+        [NUnit.Framework.CategoryAttribute("SmokeTest")]
         public void TC07CheckMainMenuApparelAccessoriesCategoryIsFunctional()
         {
             string[] tagsOfScenario = new string[] {
-                    "InDevelopment"};
+                    "SmokeTest"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC07 Check main menu Apparel & Accessories category is functional", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 13
