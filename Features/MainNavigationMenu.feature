@@ -39,3 +39,11 @@ Scenario: TC10 Check main menu Fragrance category is functional
 	Then FRAGRANCE Menu link is working
 	When I mouseover FRAGRANCE Menu button
 	Then FRAGRANCE dropdown appears and All links are working
+
+
+@InDev
+Scenario: TC11 Check main menu Men category is functional
+	Given I am on the home page
+	Then MEN Menu link is working
+	When I mouseover MEN Menu button
+	Then MEN dropdown appears and All links are working

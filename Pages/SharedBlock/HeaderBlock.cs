@@ -58,12 +58,7 @@ namespace TestSuite.Pages
             WebElementHelper.MouseOverHelper(accountMenu);
             WaitForElementToBeClickable(accountMenuLoginLink);
             accountMenuLoginLink.Click();
-        }
-
-        internal void ClickMenCategory() 
-        {
-            WebElementHelper.MouseOverHelper(menMenuBtn);            
-        }        
+        }      
 
         internal string GetTopCustomerMenu() 
         {
@@ -128,9 +123,7 @@ namespace TestSuite.Pages
         internal bool AreSkincareMenuDropdownLinksWorking()
         {
             return Utils.AreAllLinksWorking(skincareMenuDropdown, 5);
-        }
-
-        #endregion
+        }        
 
         internal void MouseoverFragranceMenuBtn()
         {
@@ -145,6 +138,24 @@ namespace TestSuite.Pages
         internal bool AreFragranceMenuDropdownLinksWorking()
         {
             return Utils.AreAllLinksWorking(fragranceMenuDropdown, 2);
+        }
+
+        #endregion
+
+
+        internal void MouseoverMenMenuBtn()
+        {
+            WebElementHelper.MouseOverHelper(menMenuBtn);
+        }
+
+        internal bool IsMenMenuBtnLinkWorking()
+        {
+            return Utils.IsUrlWorking(menMenuBtn, "href");
+        }
+
+        internal bool AreMenMenuDropdownLinksWorking()
+        {
+            return Utils.AreAllLinksWorking(menMenuDropdown, 4);
         }
     }
 }
