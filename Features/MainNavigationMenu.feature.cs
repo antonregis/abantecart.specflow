@@ -285,11 +285,11 @@ this.ScenarioInitialize(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("TC12 Check main menu Hair Care category is functional")]
-        [NUnit.Framework.CategoryAttribute("InDev")]
+        [NUnit.Framework.CategoryAttribute("SmokeTest")]
         public void TC12CheckMainMenuHairCareCategoryIsFunctional()
         {
             string[] tagsOfScenario = new string[] {
-                    "InDev"};
+                    "SmokeTest"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC12 Check main menu Hair Care category is functional", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 53
@@ -313,6 +313,41 @@ this.ScenarioInitialize(scenarioInfo);
 #line hidden
 #line 57
  testRunner.Then("HAIR CARE dropdown appears and All links are working", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("TC13 Check main menu Books category is functional")]
+        [NUnit.Framework.CategoryAttribute("InDev")]
+        public void TC13CheckMainMenuBooksCategoryIsFunctional()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "InDev"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC13 Check main menu Books category is functional", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 60
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 61
+ testRunner.Given("I am on the home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 62
+ testRunner.Then("BOOKS Menu link is working", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 63
+ testRunner.When("I mouseover BOOKS Menu button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 64
+ testRunner.Then("BOOKS dropdown appears and All links are working", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

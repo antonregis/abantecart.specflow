@@ -156,5 +156,26 @@ namespace TestSuite.StepDefinitions
         {
             Assert.IsTrue(homePage.HeaderBlock.AreHairCareMenuDropdownLinksWorking());
         }
+
+
+        // BOOKS Menu
+
+        [Then(@"BOOKS Menu link is working")]
+        public void ThenBOOKSMenuLinkIsWorking()
+        {
+            Assert.IsTrue(homePage.HeaderBlock.AreBooksMenuDropdownLinksWorking());
+        }
+
+        [When(@"I mouseover BOOKS Menu button")]
+        public void WhenIMouseoverBOOKSMenuButton()
+        {
+            homePage.HeaderBlock.MouseoverBooksMenuBtn();
+        }
+
+        [Then(@"BOOKS dropdown appears and All links are working")]
+        public void ThenBOOKSDropdownAppearsAndAllLinksAreWorking()
+        {
+            Assert.IsTrue(homePage.HeaderBlock.AreBooksMenuDropdownLinksWorking());
+        }
     }
 }

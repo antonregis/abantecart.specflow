@@ -55,3 +55,11 @@ Scenario: TC12 Check main menu Hair Care category is functional
 	Then HAIR CARE Menu link is working
 	When I mouseover HAIR CARE Menu button
 	Then HAIR CARE dropdown appears and All links are working
+
+
+@SmokeTest
+Scenario: TC13 Check main menu Books category is functional
+	Given I am on the home page
+	Then BOOKS Menu link is working
+	When I mouseover BOOKS Menu button
+	Then BOOKS dropdown appears and All links are working
