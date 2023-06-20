@@ -135,5 +135,26 @@ namespace TestSuite.StepDefinitions
         {
             Assert.IsTrue(homePage.HeaderBlock.AreMenMenuDropdownLinksWorking());
         }
+
+
+        // HAIR CARE Menu
+
+        [Then(@"HAIR CARE Menu link is working")]
+        public void ThenHAIRCAREMenuLinkIsWorking()
+        {
+            Assert.IsTrue(homePage.HeaderBlock.AreHairCareMenuDropdownLinksWorking());
+        }
+
+        [When(@"I mouseover HAIR CARE Menu button")]
+        public void WhenIMouseoverHAIRCAREMenuButton()
+        {
+            homePage.HeaderBlock.MouseoverHairCareMenuBtn();
+        }
+
+        [Then(@"HAIR CARE dropdown appears and All links are working")]
+        public void ThenHAIRCAREDropdownAppearsAndAllLinksAreWorking()
+        {
+            Assert.IsTrue(homePage.HeaderBlock.AreHairCareMenuDropdownLinksWorking());
+        }
     }
 }
