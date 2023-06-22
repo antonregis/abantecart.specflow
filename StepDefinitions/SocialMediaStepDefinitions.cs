@@ -24,5 +24,19 @@ namespace TestSuite.StepDefinitions
             Assert.That(homePage.HeaderBlock.GetTwitterBtnUrl(), Is.EqualTo("https://twitter.com/abantecart"));
             Assert.IsTrue(homePage.HeaderBlock.IsTwitterBtnWorking());
         }
+
+        [Then(@"Facebook footer link is correct and working")]
+        public void ThenFacebookFooterLinkIsCorrectAndWorking()
+        {
+            Assert.That(homePage.FooterBlock.GetfacebookBtnUrl(), Is.EqualTo("https://www.facebook.com/AbanteCart"));
+            Assert.IsTrue(homePage.FooterBlock.IsFacebookBtnWorking());
+        }
+
+        [Then(@"Twitter footer link is correct and working")]
+        public void ThenTwitterFooterLinkIsCorrectAndWorking()
+        {
+            Assert.That(homePage.FooterBlock.GetTwitterBtnUrl(), Is.EqualTo("https://twitter.com/abantecart"));
+            Assert.IsTrue(homePage.FooterBlock.IsTwitterBtnWorking());
+        }
     }
 }

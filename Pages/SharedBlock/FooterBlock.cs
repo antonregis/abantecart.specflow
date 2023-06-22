@@ -7,10 +7,11 @@ namespace TestSuite.Pages
 {
     public class FooterBlock : Driver
     {
-        
+
         #region  Initialize Web Elements
-        
-        private static IWebElement footerLinks => driver.FindElement(By.XPath("//div[@class='pull-left']"));
+
+        private static IWebElement facebookBtn => driver.FindElement(By.XPath("//div[@class='footer_block']//a[@title='Facebook']"));
+        private static IWebElement twitterBtn => driver.FindElement(By.XPath("//div[@class='footer_block']//a[@title='Twitter']"));
 
         #endregion
 
@@ -20,10 +21,24 @@ namespace TestSuite.Pages
             // Your code here
         }
 
-
-        internal bool AreAllFooterLinksWorking()
+        internal bool IsFacebookBtnWorking()
         {
-            return Utils.AreAllLinksWorking(footerLinks, 6);
+            return Utils.IsUrlWorking(facebookBtn, "href");
+        }
+
+        internal string GetfacebookBtnUrl()
+        {
+            return facebookBtn.GetAttribute("href");
+        }
+
+        internal bool IsTwitterBtnWorking()
+        {
+            return Utils.IsUrlWorking(twitterBtn, "href");
+        }
+
+        internal string GetTwitterBtnUrl()
+        {
+            return twitterBtn.GetAttribute("href");
         }
     }
 }

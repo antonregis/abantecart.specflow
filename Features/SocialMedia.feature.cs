@@ -75,11 +75,11 @@ namespace TestSuite.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("TC06A. Check Header Social Media links are working")]
-        [NUnit.Framework.CategoryAttribute("InDev")]
+        [NUnit.Framework.CategoryAttribute("SmokeTest")]
         public void TC06A_CheckHeaderSocialMediaLinksAreWorking()
         {
             string[] tagsOfScenario = new string[] {
-                    "InDev"};
+                    "SmokeTest"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC06A. Check Header Social Media links are working", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 5
@@ -100,6 +100,38 @@ this.ScenarioInitialize(scenarioInfo);
 #line hidden
 #line 8
  testRunner.Then("Twitter header link is correct and working", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("TC06B. Check Footer Social Media links are working")]
+        [NUnit.Framework.CategoryAttribute("InDev")]
+        public void TC06B_CheckFooterSocialMediaLinksAreWorking()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "InDev"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC06B. Check Footer Social Media links are working", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 12
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 13
+ testRunner.Given("I am on the home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 14
+ testRunner.Then("Facebook footer link is correct and working", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 15
+ testRunner.Then("Twitter footer link is correct and working", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
