@@ -37,6 +37,9 @@ namespace TestSuite.Pages
         private static IWebElement hairCareMenuDropdown => driver.FindElement(By.XPath("//*[@id='categorymenu']/nav/ul/li[7]/div"));
         private static IWebElement booksMenuDropdown => driver.FindElement(By.XPath("//*[@id='categorymenu']/nav/ul/li[8]/div"));
 
+        private static IWebElement searchBox => driver.FindElement(By.CssSelector("#filter_keyword"));
+        private static IWebElement magnifyingLensBtn => driver.FindElement(By.XPath("//div[@title='Go']//i[@class='fa fa-search']"));
+
         #endregion
 
         #region Hide this region temporarily
@@ -58,7 +61,18 @@ namespace TestSuite.Pages
             WebElementHelper.MouseOverHelper(accountMenu);
             WaitForElementToBeClickable(accountMenuLoginLink);
             accountMenuLoginLink.Click();
-        }      
+        }
+
+        internal void EnterSearchBox(string keyword) 
+        { 
+            searchBox.Clear();
+            searchBox.SendKeys(keyword);            
+        }
+
+        internal void ClickMagnifyingLensBtn() 
+        {
+            magnifyingLensBtn.Click();
+        }
 
         internal string GetTopCustomerMenu() 
         {
