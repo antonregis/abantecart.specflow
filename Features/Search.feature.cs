@@ -74,14 +74,14 @@ namespace TestSuite.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("TC05a. Check user can search a keyword that matches search criteria")]
-        [NUnit.Framework.CategoryAttribute("InDev")]
+        [NUnit.Framework.DescriptionAttribute("TC05A. Check user can search a keyword that matches search criteria")]
+        [NUnit.Framework.CategoryAttribute("SmokeTest")]
         public void TC05A_CheckUserCanSearchAKeywordThatMatchesSearchCriteria()
         {
             string[] tagsOfScenario = new string[] {
-                    "InDev"};
+                    "SmokeTest"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC05a. Check user can search a keyword that matches search criteria", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC05A. Check user can search a keyword that matches search criteria", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 5
 this.ScenarioInitialize(scenarioInfo);
 #line hidden

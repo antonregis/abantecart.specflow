@@ -1,7 +1,7 @@
 ﻿Feature: Login
 
 @SmokeTest
-Scenario: TC01 Check if user can login and logout
+Scenario: TC01A. Check if user can login and logout
 	Given I am on the home page
 	When I click Login or register
 	Then Account Login page appears

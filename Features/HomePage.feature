@@ -2,7 +2,7 @@
 
 
 @SmokeTest
-Scenario: TC03 Check all Homepage block elements are displayed
+Scenario: TC03A. Check all Homepage block elements are displayed
 	Given I am on the home page
 	Then headerstrip block element is displayed
 	And headerdetails block element is displayed
@@ -21,7 +21,7 @@ Scenario: TC03 Check all Homepage block elements are displayed
 
 
 @SmokeTest
-Scenario: TC04 Check website logo is displayed correctly
+Scenario: TC03B. Check website logo is displayed correctly
 	Given I am on the home page
 	Then Logo element is displayed
 	And Logo image src Url is correct "resources/image/18/73/3.png"
@@ -29,7 +29,7 @@ Scenario: TC04 Check website logo is displayed correctly
 
 
 @SmokeTest
-Scenario: TC05 Check website logo links to homepage on the same tab
+Scenario: TC03C. Check website logo links to homepage on the same tab
 	Given I am on the home page
 	Then Logo href URL is correct
 	And HTML link tag does not have target and onclick attributes

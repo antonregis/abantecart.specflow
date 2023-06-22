@@ -74,14 +74,14 @@ namespace TestSuite.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("TC06 Check main menu Home category is functional")]
+        [NUnit.Framework.DescriptionAttribute("TC04A. Check main menu Home category is functional")]
         [NUnit.Framework.CategoryAttribute("SmokeTest")]
-        public void TC06CheckMainMenuHomeCategoryIsFunctional()
+        public void TC04A_CheckMainMenuHomeCategoryIsFunctional()
         {
             string[] tagsOfScenario = new string[] {
                     "SmokeTest"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC06 Check main menu Home category is functional", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC04A. Check main menu Home category is functional", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 5
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -109,14 +109,14 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("TC07 Check main menu Apparel & Accessories category is functional")]
+        [NUnit.Framework.DescriptionAttribute("TC04B. Check main menu Apparel & Accessories category is functional")]
         [NUnit.Framework.CategoryAttribute("SmokeTest")]
-        public void TC07CheckMainMenuApparelAccessoriesCategoryIsFunctional()
+        public void TC04B_CheckMainMenuApparelAccessoriesCategoryIsFunctional()
         {
             string[] tagsOfScenario = new string[] {
                     "SmokeTest"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC07 Check main menu Apparel & Accessories category is functional", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC04B. Check main menu Apparel & Accessories category is functional", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 13
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -144,14 +144,14 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("TC08 Check main menu Makeup category is functional")]
+        [NUnit.Framework.DescriptionAttribute("TC04C. Check main menu Makeup category is functional")]
         [NUnit.Framework.CategoryAttribute("SmokeTest")]
-        public void TC08CheckMainMenuMakeupCategoryIsFunctional()
+        public void TC04C_CheckMainMenuMakeupCategoryIsFunctional()
         {
             string[] tagsOfScenario = new string[] {
                     "SmokeTest"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC08 Check main menu Makeup category is functional", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC04C. Check main menu Makeup category is functional", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 21
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -179,14 +179,14 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("TC09 Check main menu Skincare category is functional")]
+        [NUnit.Framework.DescriptionAttribute("TC04D. Check main menu Skincare category is functional")]
         [NUnit.Framework.CategoryAttribute("SmokeTest")]
-        public void TC09CheckMainMenuSkincareCategoryIsFunctional()
+        public void TC04D_CheckMainMenuSkincareCategoryIsFunctional()
         {
             string[] tagsOfScenario = new string[] {
                     "SmokeTest"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC09 Check main menu Skincare category is functional", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC04D. Check main menu Skincare category is functional", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 29
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -214,14 +214,14 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("TC10 Check main menu Fragrance category is functional")]
+        [NUnit.Framework.DescriptionAttribute("TC04E. Check main menu Fragrance category is functional")]
         [NUnit.Framework.CategoryAttribute("SmokeTest")]
-        public void TC10CheckMainMenuFragranceCategoryIsFunctional()
+        public void TC04E_CheckMainMenuFragranceCategoryIsFunctional()
         {
             string[] tagsOfScenario = new string[] {
                     "SmokeTest"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC10 Check main menu Fragrance category is functional", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC04E. Check main menu Fragrance category is functional", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 37
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -249,14 +249,14 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("TC11 Check main menu Men category is functional")]
+        [NUnit.Framework.DescriptionAttribute("TC04F. Check main menu Men category is functional")]
         [NUnit.Framework.CategoryAttribute("SmokeTest")]
-        public void TC11CheckMainMenuMenCategoryIsFunctional()
+        public void TC04F_CheckMainMenuMenCategoryIsFunctional()
         {
             string[] tagsOfScenario = new string[] {
                     "SmokeTest"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC11 Check main menu Men category is functional", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC04F. Check main menu Men category is functional", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 45
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -284,14 +284,14 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("TC12 Check main menu Hair Care category is functional")]
+        [NUnit.Framework.DescriptionAttribute("TC04G. Check main menu Hair Care category is functional")]
         [NUnit.Framework.CategoryAttribute("SmokeTest")]
-        public void TC12CheckMainMenuHairCareCategoryIsFunctional()
+        public void TC04G_CheckMainMenuHairCareCategoryIsFunctional()
         {
             string[] tagsOfScenario = new string[] {
                     "SmokeTest"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC12 Check main menu Hair Care category is functional", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC04G. Check main menu Hair Care category is functional", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 53
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -319,14 +319,14 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("TC13 Check main menu Books category is functional")]
+        [NUnit.Framework.DescriptionAttribute("TC04H. Check main menu Books category is functional")]
         [NUnit.Framework.CategoryAttribute("SmokeTest")]
-        public void TC13CheckMainMenuBooksCategoryIsFunctional()
+        public void TC04H_CheckMainMenuBooksCategoryIsFunctional()
         {
             string[] tagsOfScenario = new string[] {
                     "SmokeTest"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC13 Check main menu Books category is functional", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC04H. Check main menu Books category is functional", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 61
 this.ScenarioInitialize(scenarioInfo);
 #line hidden

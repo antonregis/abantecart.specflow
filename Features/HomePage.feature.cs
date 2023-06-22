@@ -74,14 +74,14 @@ namespace TestSuite.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("TC03 Check all Homepage block elements are displayed")]
+        [NUnit.Framework.DescriptionAttribute("TC03A. Check all Homepage block elements are displayed")]
         [NUnit.Framework.CategoryAttribute("SmokeTest")]
-        public void TC03CheckAllHomepageBlockElementsAreDisplayed()
+        public void TC03A_CheckAllHomepageBlockElementsAreDisplayed()
         {
             string[] tagsOfScenario = new string[] {
                     "SmokeTest"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC03 Check all Homepage block elements are displayed", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC03A. Check all Homepage block elements are displayed", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 5
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -142,14 +142,14 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("TC04 Check website logo is displayed correctly")]
+        [NUnit.Framework.DescriptionAttribute("TC03B. Check website logo is displayed correctly")]
         [NUnit.Framework.CategoryAttribute("SmokeTest")]
-        public void TC04CheckWebsiteLogoIsDisplayedCorrectly()
+        public void TC03B_CheckWebsiteLogoIsDisplayedCorrectly()
         {
             string[] tagsOfScenario = new string[] {
                     "SmokeTest"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC04 Check website logo is displayed correctly", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC03B. Check website logo is displayed correctly", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 24
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -177,14 +177,14 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("TC05 Check website logo links to homepage on the same tab")]
+        [NUnit.Framework.DescriptionAttribute("TC03C. Check website logo links to homepage on the same tab")]
         [NUnit.Framework.CategoryAttribute("SmokeTest")]
-        public void TC05CheckWebsiteLogoLinksToHomepageOnTheSameTab()
+        public void TC03C_CheckWebsiteLogoLinksToHomepageOnTheSameTab()
         {
             string[] tagsOfScenario = new string[] {
                     "SmokeTest"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC05 Check website logo links to homepage on the same tab", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC03C. Check website logo links to homepage on the same tab", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 32
 this.ScenarioInitialize(scenarioInfo);
 #line hidden

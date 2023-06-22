@@ -74,14 +74,14 @@ namespace TestSuite.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("TC01 Check if user can login and logout")]
+        [NUnit.Framework.DescriptionAttribute("TC01A. Check if user can login and logout")]
         [NUnit.Framework.CategoryAttribute("SmokeTest")]
-        public void TC01CheckIfUserCanLoginAndLogout()
+        public void TC01A_CheckIfUserCanLoginAndLogout()
         {
             string[] tagsOfScenario = new string[] {
                     "SmokeTest"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC01 Check if user can login and logout", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC01A. Check if user can login and logout", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 4
 this.ScenarioInitialize(scenarioInfo);
 #line hidden

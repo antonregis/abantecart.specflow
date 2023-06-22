@@ -2,7 +2,7 @@
 
 
 @SmokeTest
-Scenario: TC02 Check user can change Personal details
+Scenario: TC02A. Check user can change Personal details
 	Given I am on the home page
 	When I click Account menu Login link
 	And I enter my Login Name and Password

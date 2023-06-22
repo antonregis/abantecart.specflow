@@ -2,7 +2,7 @@
 
 
 @SmokeTest
-Scenario: TC06 Check main menu Home category is functional
+Scenario: TC04A. Check main menu Home category is functional
 	Given I am on the home page
 	Then HOME Menu link is working
 	When I mouseover HOME Menu button
@@ -10,7 +10,7 @@ Scenario: TC06 Check main menu Home category is functional
 
 
 @SmokeTest
-Scenario: TC07 Check main menu Apparel & Accessories category is functional
+Scenario: TC04B. Check main menu Apparel & Accessories category is functional
 	Given I am on the home page
 	Then APPAREL & ACCESSORIES Menu link is working
 	When I mouseover APPAREL & ACCESSORIES Menu button
@@ -18,7 +18,7 @@ Scenario: TC07 Check main menu Apparel & Accessories category is functional
 
 
 @SmokeTest
-Scenario: TC08 Check main menu Makeup category is functional
+Scenario: TC04C. Check main menu Makeup category is functional
 	Given I am on the home page
 	Then MAKEUP Menu link is working
 	When I mouseover MAKEUP Menu button
@@ -26,7 +26,7 @@ Scenario: TC08 Check main menu Makeup category is functional
 
 
 @SmokeTest
-Scenario: TC09 Check main menu Skincare category is functional
+Scenario: TC04D. Check main menu Skincare category is functional
 	Given I am on the home page
 	Then SKINCARE Menu link is working
 	When I mouseover SKINCARE Menu button
@@ -34,7 +34,7 @@ Scenario: TC09 Check main menu Skincare category is functional
 
 
 @SmokeTest
-Scenario: TC10 Check main menu Fragrance category is functional
+Scenario: TC04E. Check main menu Fragrance category is functional
 	Given I am on the home page
 	Then FRAGRANCE Menu link is working
 	When I mouseover FRAGRANCE Menu button
@@ -42,7 +42,7 @@ Scenario: TC10 Check main menu Fragrance category is functional
 
 
 @SmokeTest
-Scenario: TC11 Check main menu Men category is functional
+Scenario: TC04F. Check main menu Men category is functional
 	Given I am on the home page
 	Then MEN Menu link is working
 	When I mouseover MEN Menu button
@@ -50,7 +50,7 @@ Scenario: TC11 Check main menu Men category is functional
 
 
 @SmokeTest
-Scenario: TC12 Check main menu Hair Care category is functional
+Scenario: TC04G. Check main menu Hair Care category is functional
 	Given I am on the home page
 	Then HAIR CARE Menu link is working
 	When I mouseover HAIR CARE Menu button
@@ -58,7 +58,7 @@ Scenario: TC12 Check main menu Hair Care category is functional
 
 
 @SmokeTest
-Scenario: TC13 Check main menu Books category is functional
+Scenario: TC04H. Check main menu Books category is functional
 	Given I am on the home page
 	Then BOOKS Menu link is working
 	When I mouseover BOOKS Menu button
