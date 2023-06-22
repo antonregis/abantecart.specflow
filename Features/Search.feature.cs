@@ -119,13 +119,13 @@ this.ScenarioInitialize(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("TC05B. Check user cannot search a keyword that does not match search criteria")]
-        [NUnit.Framework.CategoryAttribute("InDev")]
+        [NUnit.Framework.CategoryAttribute("SmokeTest")]
         [NUnit.Framework.TestCaseAttribute("<script>alert(\"YOU GOT HACKED by Javascript injection!\");</script>", "*", null)]
         [NUnit.Framework.TestCaseAttribute("chat.openai.com", "", null)]
         public void TC05B_CheckUserCannotSearchAKeywordThatDoesNotMatchSearchCriteria(string keyword1, string keyword2, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "InDev"};
+                    "SmokeTest"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));

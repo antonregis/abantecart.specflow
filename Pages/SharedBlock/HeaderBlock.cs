@@ -40,6 +40,9 @@ namespace TestSuite.Pages
         private static IWebElement searchBox => driver.FindElement(By.CssSelector("#filter_keyword"));
         private static IWebElement magnifyingLensBtn => driver.FindElement(By.XPath("//div[@title='Go']//i[@class='fa fa-search']"));
 
+        private static IWebElement facebookBtn => driver.FindElement(By.XPath("/html/body/div/header/div[2]/div/div[4]/div/div/a[1]"));
+        private static IWebElement twitterBtn => driver.FindElement(By.XPath("/html/body/div/header/div[2]/div/div[4]/div/div/a[2]"));
+
         #endregion
 
         #region Hide this region temporarily
@@ -197,6 +200,26 @@ namespace TestSuite.Pages
         internal bool AreBooksMenuDropdownLinksWorking()
         {
             return Utils.AreAllLinksWorking(booksMenuDropdown, 2);
+        }
+
+        internal bool IsFacebookBtnWorking()
+        {
+            return Utils.IsUrlWorking(facebookBtn, "href");
+        }
+
+        internal string GetfacebookBtnUrl() 
+        {
+            return facebookBtn.GetAttribute("href");
+        }
+
+        internal bool IsTwitterBtnWorking()
+        {
+            return Utils.IsUrlWorking(twitterBtn, "href");
+        }
+
+        internal string GetTwitterBtnUrl() 
+        { 
+            return twitterBtn.GetAttribute("href");
         }
 
         #endregion
