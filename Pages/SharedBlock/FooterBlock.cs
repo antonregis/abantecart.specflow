@@ -12,13 +12,15 @@ namespace TestSuite.Pages
 
         private static IWebElement facebookBtn => driver.FindElement(By.XPath("//div[@class='footer_block']//a[@title='Facebook']"));
         private static IWebElement twitterBtn => driver.FindElement(By.XPath("//div[@class='footer_block']//a[@title='Twitter']"));
+        private static IWebElement contactUsLink => driver.FindElement(By.LinkText("Contact Us"));
+
 
         #endregion
 
 
-        internal void PlaceHolderMethodName()
+        internal void ClickContactUsLink()
         {
-            // Your code here
+            contactUsLink.Click();
         }
 
         internal bool IsFacebookBtnWorking()
