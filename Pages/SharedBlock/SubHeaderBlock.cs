@@ -31,5 +31,10 @@ namespace TestSuite.Pages
         {
             return subTextLabel.Text.Trim();
         }
+
+        public bool IsHeaderNameLoaded()
+        {
+            return headerName.Displayed;
+        }
     }
 }
