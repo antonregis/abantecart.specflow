@@ -47,5 +47,32 @@ namespace TestSuite.StepDefinitions
         {
             Assert.That(contactUsPage.GetSuccessfullySentMsg(), Is.EqualTo(p0));  
         }
+
+
+        [When(@"Leave all Contact Us feilds blank")]
+        public void WhenLeaveAllContactUsFeildsBlank()
+        {
+            contactUsPage.EnterFirstNameField("");
+            contactUsPage.EnterEmailField("");
+            contactUsPage.EnterEnquiryTextarea("");
+        }
+
+        [Then(@"First name field returns with error message ""([^""]*)""")]
+        public void ThenFirstNameFieldReturnsWithErrorMessage(string p0)
+        {
+            Assert.That(contactUsPage.GetFirstNameErrorMsg(), Is.EqualTo(p0));
+        }
+
+        [Then(@"Email field returns with error message ""([^""]*)""")]
+        public void ThenEmailFieldReturnsWithErrorMessage(string p0)
+        {
+            Assert.That(contactUsPage.GetEmailErrorMsg(), Is.EqualTo(p0));
+        }
+
+        [Then(@"Enquiry text area returns with error message ""([^""]*)""")]
+        public void ThenEnquiryTextAreaReturnsWithErrorMessage(string p0)
+        {
+            Assert.That(contactUsPage.GetEqnuiryErrorMsg(), Is.EqualTo(p0));  
+        }
     }
 }
